@@ -13,6 +13,15 @@
 		35AD771428A08FE600B25B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AD771228A08FE600B25B13 /* Main.storyboard */; };
 		35AD771628A08FE700B25B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AD771528A08FE700B25B13 /* Assets.xcassets */; };
 		35AD771928A08FE700B25B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AD771728A08FE700B25B13 /* LaunchScreen.storyboard */; };
+		35AD772228A0902300B25B13 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35AD772128A0902300B25B13 /* Alamofire */; };
+		35AD772528A0903200B25B13 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 35AD772428A0903200B25B13 /* Kingfisher */; };
+		35AD772828A0903E00B25B13 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 35AD772728A0903E00B25B13 /* SwiftyJSON */; };
+		35AD772A28A090DD00B25B13 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 35AD772928A090DD00B25B13 /* .gitignore */; };
+		35AD772C28A0911300B25B13 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD772B28A0911300B25B13 /* APIKey.swift */; };
+		35AD772F28A0949F00B25B13 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD772E28A0949F00B25B13 /* Endpoint.swift */; };
+		35AD773128A0951400B25B13 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD773028A0951400B25B13 /* URL+Extension.swift */; };
+		35AD773328A0A79000B25B13 /* KakaoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD773228A0A79000B25B13 /* KakaoAPIManager.swift */; };
+		35AD773528A0ABFF00B25B13 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD773428A0ABFF00B25B13 /* ClosureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,12 @@
 		35AD771528A08FE700B25B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35AD771828A08FE700B25B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35AD771A28A08FE700B25B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35AD772928A090DD00B25B13 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		35AD772B28A0911300B25B13 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		35AD772E28A0949F00B25B13 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		35AD773028A0951400B25B13 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		35AD773228A0A79000B25B13 /* KakaoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPIManager.swift; sourceTree = "<group>"; };
+		35AD773428A0ABFF00B25B13 /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AD772828A0903E00B25B13 /* SwiftyJSON in Frameworks */,
+				35AD772528A0903200B25B13 /* Kingfisher in Frameworks */,
+				35AD772228A0902300B25B13 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 		35AD770028A08FE600B25B13 = {
 			isa = PBXGroup;
 			children = (
+				35AD772928A090DD00B25B13 /* .gitignore */,
 				35AD770B28A08FE600B25B13 /* SeSAC2Week6 */,
 				35AD770A28A08FE600B25B13 /* Products */,
 			);
@@ -60,11 +79,24 @@
 				35AD770E28A08FE600B25B13 /* SceneDelegate.swift */,
 				35AD771028A08FE600B25B13 /* ViewController.swift */,
 				35AD771228A08FE600B25B13 /* Main.storyboard */,
+				35AD773428A0ABFF00B25B13 /* ClosureViewController.swift */,
 				35AD771528A08FE700B25B13 /* Assets.xcassets */,
 				35AD771728A08FE700B25B13 /* LaunchScreen.storyboard */,
+				35AD772D28A0948600B25B13 /* Network */,
 				35AD771A28A08FE700B25B13 /* Info.plist */,
 			);
 			path = SeSAC2Week6;
+			sourceTree = "<group>";
+		};
+		35AD772D28A0948600B25B13 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				35AD772B28A0911300B25B13 /* APIKey.swift */,
+				35AD772E28A0949F00B25B13 /* Endpoint.swift */,
+				35AD773028A0951400B25B13 /* URL+Extension.swift */,
+				35AD773228A0A79000B25B13 /* KakaoAPIManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,11 @@
 			dependencies = (
 			);
 			name = SeSAC2Week6;
+			packageProductDependencies = (
+				35AD772128A0902300B25B13 /* Alamofire */,
+				35AD772428A0903200B25B13 /* Kingfisher */,
+				35AD772728A0903E00B25B13 /* SwiftyJSON */,
+			);
 			productName = SeSAC2Week6;
 			productReference = 35AD770928A08FE600B25B13 /* SeSAC2Week6.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,11 @@
 				Base,
 			);
 			mainGroup = 35AD770028A08FE600B25B13;
+			packageReferences = (
+				35AD772028A0902300B25B13 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				35AD772328A0903200B25B13 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				35AD772628A0903E00B25B13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 35AD770A28A08FE600B25B13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AD772A28A090DD00B25B13 /* .gitignore in Resources */,
 				35AD771928A08FE700B25B13 /* LaunchScreen.storyboard in Resources */,
 				35AD771628A08FE700B25B13 /* Assets.xcassets in Resources */,
 				35AD771428A08FE600B25B13 /* Main.storyboard in Resources */,
@@ -140,7 +183,12 @@
 			files = (
 				35AD771128A08FE600B25B13 /* ViewController.swift in Sources */,
 				35AD770D28A08FE600B25B13 /* AppDelegate.swift in Sources */,
+				35AD773528A0ABFF00B25B13 /* ClosureViewController.swift in Sources */,
+				35AD772C28A0911300B25B13 /* APIKey.swift in Sources */,
 				35AD770F28A08FE600B25B13 /* SceneDelegate.swift in Sources */,
+				35AD773328A0A79000B25B13 /* KakaoAPIManager.swift in Sources */,
+				35AD772F28A0949F00B25B13 /* Endpoint.swift in Sources */,
+				35AD773128A0951400B25B13 /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +408,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35AD772028A0902300B25B13 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		35AD772328A0903200B25B13 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		35AD772628A0903E00B25B13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35AD772128A0902300B25B13 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35AD772028A0902300B25B13 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		35AD772428A0903200B25B13 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35AD772328A0903200B25B13 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		35AD772728A0903E00B25B13 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35AD772628A0903E00B25B13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35AD770128A08FE600B25B13 /* Project object */;
 }
