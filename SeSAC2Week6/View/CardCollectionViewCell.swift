@@ -9,14 +9,24 @@ import UIKit
 
 class CardCollectionViewCell: UICollectionViewCell {
 
+ 
+    
     @IBOutlet weak var cardView: CardView!
     
     //변경되지 않는 UI
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        print("CardCollectionViewCell", #function)
         setupUI()
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        cardView.contentLabel.text = "AAA"
+    }
+    
 
     func setupUI() {
         cardView.backgroundColor = .clear
