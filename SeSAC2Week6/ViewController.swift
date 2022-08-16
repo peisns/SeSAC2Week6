@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     
     
     
-    var blogList: [String] = []
-    var cafeList: [String] = []
+    private var blogList: [String] = []
+    private var cafeList: [String] = []
     
-    var isExpanded = false // false 2줄, true 0줄
+    private var isExpanded = false // false 2줄, true 0줄
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         searchBlog()
     }
     
-    func searchBlog() {
+    private func searchBlog() {
         kakaoAPIManager.shared.callRequest(type: .blog, query: "고래밥") { json in
             
             self.blogList = json["documents"].arrayValue.map { $0["contents"].stringValue.replacingOccurrences(of: "<b>", with: "").replacingOccurrences(of: "</b>", with: "") }

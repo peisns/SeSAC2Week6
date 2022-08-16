@@ -63,7 +63,7 @@ class MainViewController: UIViewController {
         }
     }
     
-    
+    // 이게 수업시간에서 했떤 파일인데...
     
 }
 //내부 매개변수 tableView를 통해 테이블뷰를 특정

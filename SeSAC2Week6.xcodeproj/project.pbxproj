@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		358D95C328ABA5BD0033BE8D /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358D95C228ABA5BD0033BE8D /* Weather.storyboard */; };
+		358D95C628ABA7EF0033BE8D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D95C528ABA7EF0033BE8D /* WeatherViewController.swift */; };
+		358D95C828ABD4080033BE8D /* WeatherAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D95C728ABD4080033BE8D /* WeatherAPIManager.swift */; };
 		35AD770D28A08FE600B25B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD770C28A08FE600B25B13 /* AppDelegate.swift */; };
 		35AD770F28A08FE600B25B13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD770E28A08FE600B25B13 /* SceneDelegate.swift */; };
 		35AD771128A08FE600B25B13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD771028A08FE600B25B13 /* ViewController.swift */; };
@@ -31,9 +34,16 @@
 		35AD774428A1FC3C00B25B13 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD774328A1FC3C00B25B13 /* MainTableViewCell.swift */; };
 		35D578AF28A3307D0039F1FE /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D578AE28A3307D0039F1FE /* ReusableViewProtocol.swift */; };
 		35D578B128A343E10039F1FE /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D578B028A343E10039F1FE /* TMDBAPIManager.swift */; };
+		35D578C128A4939A0039F1FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D578C028A4939A0039F1FE /* MapViewController.swift */; };
+		35D578CA28A5D8830039F1FE /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 35D578C928A5D8830039F1FE /* YPImagePicker */; };
+		35D578CD28A5D8D00039F1FE /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 35D578CC28A5D8D00039F1FE /* TLPhotoPicker */; };
+		35D578CF28A5DD360039F1FE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D578CE28A5DD360039F1FE /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		358D95C228ABA5BD0033BE8D /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		358D95C528ABA7EF0033BE8D /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		358D95C728ABD4080033BE8D /* WeatherAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIManager.swift; sourceTree = "<group>"; };
 		35AD770928A08FE600B25B13 /* SeSAC2Week6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2Week6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AD770C28A08FE600B25B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35AD770E28A08FE600B25B13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 		35AD774328A1FC3C00B25B13 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		35D578AE28A3307D0039F1FE /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
 		35D578B028A343E10039F1FE /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
+		35D578C028A4939A0039F1FE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		35D578CE28A5DD360039F1FE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +79,23 @@
 				35AD772828A0903E00B25B13 /* SwiftyJSON in Frameworks */,
 				35AD772528A0903200B25B13 /* Kingfisher in Frameworks */,
 				35AD772228A0902300B25B13 /* Alamofire in Frameworks */,
+				35D578CA28A5D8830039F1FE /* YPImagePicker in Frameworks */,
+				35D578CD28A5D8D00039F1FE /* TLPhotoPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		358D95C428ABA5D30033BE8D /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				358D95C228ABA5BD0033BE8D /* Weather.storyboard */,
+				358D95C528ABA7EF0033BE8D /* WeatherViewController.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		35AD770028A08FE600B25B13 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +119,14 @@
 				35D578AD28A330610039F1FE /* Protocol */,
 				35AD773628A1DFF100B25B13 /* View */,
 				35AD772D28A0948600B25B13 /* Network */,
+				358D95C428ABA5D30033BE8D /* Weather */,
 				35AD770C28A08FE600B25B13 /* AppDelegate.swift */,
 				35AD770E28A08FE600B25B13 /* SceneDelegate.swift */,
 				35AD774128A1F64A00B25B13 /* MainViewController.swift */,
+				35D578CE28A5DD360039F1FE /* CameraViewController.swift */,
 				35AD771028A08FE600B25B13 /* ViewController.swift */,
 				35AD771228A08FE600B25B13 /* Main.storyboard */,
+				35D578C028A4939A0039F1FE /* MapViewController.swift */,
 				35AD773428A0ABFF00B25B13 /* ClosureViewController.swift */,
 				35AD771528A08FE700B25B13 /* Assets.xcassets */,
 				35AD771728A08FE700B25B13 /* LaunchScreen.storyboard */,
@@ -117,6 +143,7 @@
 				35AD773028A0951400B25B13 /* URL+Extension.swift */,
 				35AD773228A0A79000B25B13 /* KakaoAPIManager.swift */,
 				35D578B028A343E10039F1FE /* TMDBAPIManager.swift */,
+				358D95C728ABD4080033BE8D /* WeatherAPIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -162,6 +189,8 @@
 				35AD772128A0902300B25B13 /* Alamofire */,
 				35AD772428A0903200B25B13 /* Kingfisher */,
 				35AD772728A0903E00B25B13 /* SwiftyJSON */,
+				35D578C928A5D8830039F1FE /* YPImagePicker */,
+				35D578CC28A5D8D00039F1FE /* TLPhotoPicker */,
 			);
 			productName = SeSAC2Week6;
 			productReference = 35AD770928A08FE600B25B13 /* SeSAC2Week6.app */;
@@ -195,6 +224,8 @@
 				35AD772028A0902300B25B13 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				35AD772328A0903200B25B13 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				35AD772628A0903E00B25B13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				35D578C828A5D8830039F1FE /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+				35D578CB28A5D8D00039F1FE /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
 			);
 			productRefGroup = 35AD770A28A08FE600B25B13 /* Products */;
 			projectDirPath = "";
@@ -210,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358D95C328ABA5BD0033BE8D /* Weather.storyboard in Resources */,
 				35AD772A28A090DD00B25B13 /* .gitignore in Resources */,
 				35AD771928A08FE700B25B13 /* LaunchScreen.storyboard in Resources */,
 				35AD773A28A1E60300B25B13 /* CardView.xib in Resources */,
@@ -227,8 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AD774428A1FC3C00B25B13 /* MainTableViewCell.swift in Sources */,
+				358D95C628ABA7EF0033BE8D /* WeatherViewController.swift in Sources */,
 				35AD771128A08FE600B25B13 /* ViewController.swift in Sources */,
 				35AD770D28A08FE600B25B13 /* AppDelegate.swift in Sources */,
+				358D95C828ABD4080033BE8D /* WeatherAPIManager.swift in Sources */,
+				35D578CF28A5DD360039F1FE /* CameraViewController.swift in Sources */,
 				35AD773528A0ABFF00B25B13 /* ClosureViewController.swift in Sources */,
 				35AD774228A1F64A00B25B13 /* MainViewController.swift in Sources */,
 				35AD773F28A1F37A00B25B13 /* CardCollectionViewCell.swift in Sources */,
@@ -241,6 +276,7 @@
 				35AD772F28A0949F00B25B13 /* Endpoint.swift in Sources */,
 				35D578B128A343E10039F1FE /* TMDBAPIManager.swift in Sources */,
 				35AD773128A0951400B25B13 /* URL+Extension.swift in Sources */,
+				35D578C128A4939A0039F1FE /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,11 +426,16 @@
 				DEVELOPMENT_TEAM = BG68R7N92W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSAC2Week6/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 현재 위치 기반으로 맛집 정보를 보여주기 위해서 권한이 필요합니다.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "동영상 접근";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "갤러리 접근";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Weather;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,11 +460,16 @@
 				DEVELOPMENT_TEAM = BG68R7N92W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSAC2Week6/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 현재 위치 기반으로 맛집 정보를 보여주기 위해서 권한이 필요합니다.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "동영상 접근";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "갤러리 접근";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Weather;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,6 +532,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		35D578C828A5D8830039F1FE /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		35D578CB28A5D8D00039F1FE /* XCRemoteSwiftPackageReference "TLPhotoPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tilltue/TLPhotoPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -503,6 +565,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35AD772628A0903E00B25B13 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		35D578C928A5D8830039F1FE /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35D578C828A5D8830039F1FE /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+		35D578CC28A5D8D00039F1FE /* TLPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35D578CB28A5D8D00039F1FE /* XCRemoteSwiftPackageReference "TLPhotoPicker" */;
+			productName = TLPhotoPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
